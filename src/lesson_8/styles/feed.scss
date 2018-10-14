@@ -1,0 +1,32 @@
+@import './mixins.scss';
+
+.post {
+  min-height: 640px;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  &_first {
+    background-image: url('../../assets/images/lesson_8/first.jpg');
+  }
+  &_second {
+    background-image: url('../../assets/images/lesson_8/second.jpg');
+  }
+  &_third {
+    background-image: url('../../assets/images/lesson_8/third.jpg');
+    background-position: bottom left;
+  }
+  &__thumbnail {
+    width: 100%;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    object-fit: cover
+  }
+  &__fourth {
+    background-image: url('../../assets/images/lesson_8/fourth.jpg');
+    background-position: center;
+  }
+}

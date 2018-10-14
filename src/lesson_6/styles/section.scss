@@ -1,0 +1,113 @@
+@import './variables.scss';
+@import './mixins.scss';
+
+@mixin background-image-base {
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.section {
+  width: 100%;
+  min-height: 150px;
+  @include flex-center-horizontal;
+  align-items: stretch;
+  padding: 0 1rem;
+  &_dark {
+    background: rgb(0,0,0);
+  }
+  &_iphone-xs {
+    padding-top: 92px;
+    padding-bottom: 40px;
+  }
+  &__content {
+    @include flex-center-horizontal;
+    width: 100%;
+    max-width: $page-content-width;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &_grid {
+      flex-direction: row;
+      padding: 0.5rem;
+      flex-wrap: wrap;
+    }
+  }
+  &__block_2 {
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 50%;
+    width: 50%;
+    padding: 0.5rem;
+    @include mobile {
+      width: 100%;
+      flex-basis: 100%;
+    }
+  }
+  &__image {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    &_iphone-xs {
+      height: 300px;
+      width: 80%;
+      background-image: url(../../assets/images/lesson_6/hero-iphone-xs_large_2x.jpg);
+      margin-top: 2rem;
+      @include tablet {
+        height: 500px;
+        width: 100%;
+        background-image: url(../../assets/images/lesson_6/hero-iphone-xs_small_2x.jpg);
+      }
+    }
+  }
+}
+
+.block {
+  min-height: 400px;
+  background-color: red;
+  width: 100%;
+  height: 200px;
+  position: relative;
+  &_apple-music {
+    @include background-image-base;
+    background-image: url('../../assets/images/lesson_6/apple_music_large_2x.jpg'); 
+  }
+  &__description {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+.description {
+  text-align:center;
+  color: #ffffff;
+  &__links {
+    display: flex;
+    justify-content: center;
+  }
+  &__link {
+    color: $link-color;
+    position: relative;
+    display: block;
+    font-size: 1rem;
+    margin: 0.8rem;
+    &_white {
+      color: #ffffff;
+    }
+  }
+  &_large {
+    > * {
+      margin-top: 2rem;
+      &:first-child {
+        margin-top: 0;
+      }
+    }
+    .description__link {
+      font-size: 1.71rem;
+      margin: 0 2rem;
+    }
+  }
+}

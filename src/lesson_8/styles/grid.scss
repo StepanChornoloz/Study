@@ -1,0 +1,81 @@
+@import './mixins.scss';
+
+$devices-width:  'xl', 'lg', 'md', 'sm';
+$col-counts: 12;
+$min-col-size: 100% / $col-counts;
+
+.grid-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+[class*="col-"] {
+  flex-grow: 0;
+  flex-shrink: 0;
+  padding: 0.5rem;
+  border: 1px solid red;
+  height: 200px;
+  position: relative;
+  min-height: 1px;
+}
+@for $i from 1 through $col-counts { 
+  $size: $min-col-size * $i;
+
+  .col-#{$i} {
+    flex-basis: $size;
+    width: $size;
+    max-width: $size;
+  }
+  .col-auto {
+      flex-basis: auto;
+      width: auto;
+      max-width: none;
+  }
+  .offset-#{$i} {
+    margin-left: $min-col-size * $i
+  }
+}
+
+@for $i from 1 through 12 { 
+  $size: $min-col-size * $i;
+  .col-sm-#{$i} {
+    @include sm {
+      flex-basis: $size;
+      width: $size;
+      max-width: $size;
+    }
+  }
+  .col-md-#{$i} {
+    @include md {
+      flex-basis: $size;
+      width: $size;
+      max-width: $size;
+    }
+  }
+  .col-lg-#{$i} {
+    @include lg {
+      flex-basis: $size;
+      width: $size;
+      max-width: $size;
+    }
+  }
+
+  .col-xl-#{$i} {
+    @include xl {
+      flex-basis: $size;
+      width: $size;
+      max-width: $size;
+    }
+  }
+
+}
+
+@each $device in $devices-width {
+  @for $i from 1 through 12 { 
+    $size: $min-col-size * $i;
+    .offset-#{$device}-#{$i} {
+      margin-left: $size
+    }
+  }
+}
+
