@@ -1,0 +1,30 @@
+*  {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 14px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100px;
+}
+
+h1,
+h2,
+h3,
+h4, p {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+  }
+
+ul {
+    list-style-type: none;
+}
