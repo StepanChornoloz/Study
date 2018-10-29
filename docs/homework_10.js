@@ -60,30 +60,115 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 336);
+/******/ 	return __webpack_require__(__webpack_require__.s = 339);
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ 336:
+/***/ 339:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(337);
+module.exports = __webpack_require__(340);
 
 
 /***/ }),
 
-/***/ 337:
+/***/ 340:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-__webpack_require__(338);
+__webpack_require__(341);
+
+var _accordion = __webpack_require__(342);
+
+(0, _accordion.accordion)(document.querySelector('#accordionArticle'));
 
 /***/ }),
 
-/***/ 338:
+/***/ 341:
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
+/***/ 342:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports.accordion = accordion;
+
+__webpack_require__(343);
+
+var TITLE_CLASS_NAME = 'accordion__btn';
+var EXPAND_CLASS_NAME = 'accordion__menu_expand';
+
+function accordion(targetElement) {
+    var controls = targetElement.querySelectorAll('.' + TITLE_CLASS_NAME);
+    var expandedElement = void 0;
+
+    function expand(menu) {
+        if (expandedElement) {
+            expandedElement.classList.remove(EXPAND_CLASS_NAME);
+        }
+        menu.classList.add(EXPAND_CLASS_NAME);
+        expandedElement = menu;
+    }
+
+    function collapse() {
+        expandedElement.classList.remove(EXPAND_CLASS_NAME);
+        expandedElement = undefined;
+    }
+
+    function toggle() {
+        var menu = this.parentElement;
+        if (menu.classList.contains(EXPAND_CLASS_NAME)) {
+            collapse();
+        } else {
+            expand(menu);
+        }
+    }
+
+    function handleEvents() {
+        var _iteratorNormalCompletion = true;
+        var _didIteratorError = false;
+        var _iteratorError = undefined;
+
+        try {
+            for (var _iterator = controls[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
+                var control = _step.value;
+
+                control.addEventListener('click', toggle);
+            }
+        } catch (err) {
+            _didIteratorError = true;
+            _iteratorError = err;
+        } finally {
+            try {
+                if (!_iteratorNormalCompletion && _iterator.return) {
+                    _iterator.return();
+                }
+            } finally {
+                if (_didIteratorError) {
+                    throw _iteratorError;
+                }
+            }
+        }
+    }
+
+    handleEvents();
+}
+
+/***/ }),
+
+/***/ 343:
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
