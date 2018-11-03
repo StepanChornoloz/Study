@@ -15,6 +15,7 @@ const baseConf = (_path) => {
         homework_7: ['./src/homework_7/homework_7.js'],
         homework_10: ['./src/homework_10/homework_10.js'],
         homework_11: ['./src/homework_11/homework_11.js'],
+        homework_13: ['./src/homework_13/homework_13.js'],
     };
 
     const plugins = Object.keys(entry).reduce((acc, name) => {
