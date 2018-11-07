@@ -9,6 +9,7 @@ import '../styles/watch.scss';
    //  }
    //, 1000);
    // }   
+  let showMinutes = false;
 
    export function digitalClock () {
        
@@ -31,15 +32,14 @@ import '../styles/watch.scss';
         setInterval (digitalClock, 1000);
 
         document.getElementById("clock").addEventListener('click', function () {
+             showMinutes = true;
             document.getElementById("clock").innerHTML = hours+ ':' +minutes;
-           // setInterval (digitalClock, 1000);
         })
         
         document.getElementById("clock").addEventListener('contextmenu', function () {
+             showMinutes = true;
             document.getElementById("clock").innerHTML = hours+ ':' +minutes+ ':' + seconds+ '/' +day+ '/' +month+ '/' +year;
-           // setInterval (digitalClock, 1000);
-        })
-
+        }) ;
     }
 
     

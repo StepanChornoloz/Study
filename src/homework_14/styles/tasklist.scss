@@ -1,0 +1,58 @@
+.taskList {
+    &__form {
+    margin: 0 auto;
+    max-width: 95%;
+    padding: 30px 30px 6px 30px;
+    border: 1px solid rgba(0,0,0,.2);
+    border-radius: 5px;
+    background: rgba(0, 0, 0, 0.5); 
+    box-shadow: 0 0 13px 3px rgba(0,0,0,.5);
+    overflow: hidden;
+}
+    &__input{
+        display: flex;
+        width: 90.5%;
+        height: 48px;
+        border: 1px solid rgba(255,255,255,.4);
+        background: rgba(255, 255, 255, 0.4); 
+        display:block;
+        font-family: 'Open Sans', sans-serif;
+        font-size:18px;
+        font-weight: 300;    
+        color:#fff;
+        padding-left:20px;
+        padding-right:20px;
+        margin-bottom:20px;  
+    }
+    &__textarea{
+        background: rgba(255, 255, 255, 0.4); 
+        width: 90%;
+        height: 110px;
+        border: 1px solid rgba(255,255,255,.6);
+        border-radius: 4px;
+        display:block;
+        font-family: 'Open Sans', sans-serif;
+        font-size:18px;
+        font-weight: 300;
+        color:#fff;
+        padding-left:25px;
+        padding-right:20px;
+        padding-top:12px;
+        margin-bottom:20px;
+        overflow:hidden;
+    }
+    &__Btn {
+        width: 138px;
+        height: 44px;
+        border-radius: 4px;
+        float:right;
+        border: 1px solid #253737;
+        background: #416b68;
+        padding: 10.5px 21px;
+        border-radius: 6px;
+        box-shadow: rgba(255,255,255,0.1) 0 1px 0, inset rgba(255,255,255,0.7) 0 1px 0;
+        text-shadow: #333333 0 1px 0;
+        color: #e1e1e1;
+    }
+}
+
