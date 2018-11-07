@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Lesson_6</title>
+<link href="lesson_6.css" rel="stylesheet"></head>
+
+<body>
+  <nav class="global-nav global-nav_darken">
+    <div class="global-nav__mobile-controls">
+      <div class="global-nav__burger burger">
+        <span class="burger__raw"></span>
+        <span class="burger__raw"></span>
+      </div>
+      <div class="logo">
+        <img src="./assets/images/apple_image.svg" alt="">
+      </div>
+      <div class="global-nav__cart">
+        <img src="./assets/images/cart_image.svg" alt="">
+      </div>
+    </div>
+    <ul class="global-nav__menu">
+      <li class="global-nav__item">
+        <a href="" class="global-nav__link global-nav__link_with_image">
+          <img src="./assets/images/apple_image.svg" alt="">
+        </a>
+      </li>
+      <li class="global-nav__item">
+        <a href="" class="global-nav__link">
+          <span>Mac</span>
+        </a>
+      </li>
+      <li class="global-nav__item">
+        <a href="" class="global-nav__link">
+          <span>iPad</span>
+        </a>
+      </li>
+      <li class="global-nav__item">
+        <a href="" class="global-nav__link">
+          <span>iPhone</span>
+        </a>
+      </li>
+      <li class="global-nav__item">
+        <a href="" class="global-nav__link">
+          <span>Tv</span>
+        </a>
+      </li>
+      <li class="global-nav__item">
+        <a href="" class="global-nav__link">
+          <span>Watch</span>
+        </a>
+      </li>
+      <li class="global-nav__item">
+        <a href="" class="global-nav__link">
+          <span>Music</span>
+        </a>
+      </li>
+      <li class="global-nav__item">
+        <a href="" class="global-nav__link">
+          <span>Support</span>
+        </a>
+      </li>
+      <li class="global-nav__item">
+        <a href="" class="global-nav__link global-nav__link_with_image">
+          <img src="./assets/images/cart_image.svg" alt="">
+        </a>
+      </li>
+      <li class="global-nav__item">
+        <a href="" class="global-nav__link global-nav__link_with_image">
+          <img src="./assets/images/search.svg" alt="">
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  <section class="section section_iphone-xs section_dark">
+    <div class="section__content">
+      <div class="section__description description description_large">
+        <h3 class="description__title description__title_small">
+          iPhoneXS
+        </h3>
+        <h2 class="description__title">
+          Welcome to the <br />big screens.
+        </h2>
+        <div class="description__links">
+          <a href="" class="description__link">Learn more <i class="fas fa-chevron-right"></i></a>
+          <a href="" class="description__link">Buy <i class="fas fa-chevron-right"></i></a>
+        </div>
+      </div>
+      <figure class="section__image section__image_iphone-xs"></figure>
+    </div>
+  </section>
+
+  <div class="section section__content_grid">
+    <div class="section__block section__block_2">
+      <div class="block block_apple-music">
+        <div class="block__description description">
+          <h3 class="description__title">
+            Music
+          </h3>
+          <p class="description__content">
+            Lose yourself at 50 million songs.
+          </p>
+          <div class="description__links">
+            <a href="" class="description__link description__link_white">Try it free <i class="fas fa-chevron-right"></i></a>
+            <a href="" class="description__link description__link_white">Learn more <i class="fas fa-chevron-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section__block section__block_2">
+      <div class="block block_airpods">
+          <div class="block__description description">
+              <h3 class="description__title">
+                Airpods
+              </h3>
+              <p class="description__content">
+                Wireless. Effortless. Magicall.
+              </p>
+              <div class="description__links">
+                <a href="" class="description__link">Learn more <i class="fas fa-chevron-right"></i></a>
+                <a href="" class="description__link">Buy <i class="fas fa-chevron-right"></i></a>
+              </div>
+            </div>
+      </div>
+    </div>
+    <div class="section__block section__block_2">
+      <div class="block block_apple-music"></div>
+    </div>
+    <div class="section__block section__block_2">
+      <div class="block block_airpods"></div>
+    </div>
+  </div>
+
+  
+
+  <script>
+    const burger = document.querySelector('.burger');
+    const nav = document.querySelector('.global-nav');
+
+    burger.addEventListener('click', () => {
+      nav.classList.toggle('global-nav_opened');
+    });
+  </script>
+<script type="text/javascript" src="vendors.js"></script><script type="text/javascript" src="lesson_6.js"></script></body>
+
+</html>
