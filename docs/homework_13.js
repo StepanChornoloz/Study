@@ -109,6 +109,7 @@ __webpack_require__(352);
 //  }
 //, 1000);
 // }   
+var showMinutes = false;
 
 function digitalClock() {
 
@@ -131,13 +132,13 @@ function digitalClock() {
     setInterval(digitalClock, 1000);
 
     document.getElementById("clock").addEventListener('click', function () {
+        showMinutes = true;
         document.getElementById("clock").innerHTML = hours + ':' + minutes;
-        // setInterval (digitalClock, 1000);
     });
 
     document.getElementById("clock").addEventListener('contextmenu', function () {
+        showMinutes = true;
         document.getElementById("clock").innerHTML = hours + ':' + minutes + ':' + seconds + '/' + day + '/' + month + '/' + year;
-        // setInterval (digitalClock, 1000);
     });
 }
 
