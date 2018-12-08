@@ -1,0 +1,46 @@
+@font-face {
+    font-family: Georgia;
+    src: url("/fonts/Georgia.woff");
+    src: url("/fonts/Georgia.ttf");
+    src: url("/fonts/Georgia.eot");
+    src: url("/fonts/Georgia.woff2");
+}
+@font-face {
+    font-family: AvenirNext;
+    src: url("/fonts/AvenirNext.woff");
+    src: url("/fonts/AvenirNext.ttf");
+    src: url("/fonts/AvenirNext.eot");
+    src: url("/fonts/AvenirNext.woff2");
+}
+
+body{
+    margin: 0;
+}
+* {
+    box-sizing: border-box;
+}
+h3{
+    font-family: Georgia;
+    font-size: 32px;
+    line-height: 1.19;
+    text-align: center;
+    color: #4e5665;
+    margin-bottom: 40px;
+}
+h4{
+    font-family: Georgia;
+    font-size: 24px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.04;
+    letter-spacing: normal;
+    color: #4e5665;
+}
+p{
+    font-family: AvenirNext;
+    font-size: 16px;
+    line-height: 1.75;
+    color: #505050;
+}
+
