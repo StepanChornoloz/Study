@@ -81,6 +81,20 @@ module.exports = __webpack_require__(360);
 
 __webpack_require__(361);
 
+var selectPlanButtons = document.querySelectorAll(".banner__box_container button");
+var burgerButton = document.querySelector('.burger');
+var mobileNav = document.querySelector('.navigation_desc');
+
+for (var i = 0; i < selectPlanButtons.length; i++) {
+    selectPlanButtons[i].addEventListener("click", function () {
+        mobileNav.style.display = "block";
+    });
+}
+
+burgerButton.addEventListener('click', function () {
+    mobileNav.style.display = 'block';
+});
+
 /***/ }),
 
 /***/ 361:
