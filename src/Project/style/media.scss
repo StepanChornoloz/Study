@@ -101,15 +101,14 @@
         padding-top: 0;
     }
     .banner .banner__box p{
-        bottom: 0;
+        bottom: 3%;
     }
 }
 @media (max-width: 640px){
     .banner .banner__box p{
-        bottom: auto;
-        top: 0;
-        font-size: 14px;
+        font-size: 1.2rem;
         height: auto;
+        bottom: 5%;
     }
 }
 @media (max-width: 480px){
@@ -147,6 +146,11 @@
     }
     .statistic-item{
         width: 49%;
+    }
+    .banner .banner__box p{
+        font-size: 1rem;
+        height: auto;
+        bottom: 7%;
     }
 }
 
