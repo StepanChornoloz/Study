@@ -60,34 +60,34 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 349);
+/******/ 	return __webpack_require__(__webpack_require__.s = 343);
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ 349:
+/***/ 343:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(350);
+module.exports = __webpack_require__(344);
 
 
 /***/ }),
 
-/***/ 350:
+/***/ 344:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var _watch = __webpack_require__(351);
+var _watch = __webpack_require__(345);
 
-__webpack_require__(353);
+__webpack_require__(347);
 
 (0, _watch.digitalClock)();
 
 /***/ }),
 
-/***/ 351:
+/***/ 345:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -98,7 +98,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.digitalClock = digitalClock;
 
-__webpack_require__(352);
+__webpack_require__(346);
 
 //export  function watch (){
 //const clocks = document.querySelectorAll('clock');
@@ -144,14 +144,14 @@ function digitalClock() {
 
 /***/ }),
 
-/***/ 352:
+/***/ 346:
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
 
-/***/ 353:
+/***/ 347:
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin

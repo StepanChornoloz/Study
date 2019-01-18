@@ -10,14 +10,13 @@ const baseConf = (_path) => {
     const VENDORS_NAME = 'vendors';
     const entry = {
         index: ['babel-polyfill', './src/index/index.js'],
-        lesson_5: ['./src/lesson_5/lesson_5.js'],
-        lesson_6: ['./src/lesson_6/lesson_6.js'],
         homework_7: ['./src/homework_7/homework_7.js'],
         homework_10: ['./src/homework_10/homework_10.js'],
         homework_11: ['./src/homework_11/homework_11.js'],
         homework_13: ['./src/homework_13/homework_13.js'],
         homework_14: ['./src/homework_14/homework_14.js'],
         Project: ['./src/Project/Project.js'],
+        Game: ['./src/Game/game.js'],
     };
 
     const plugins = Object.keys(entry).reduce((acc, name) => {
