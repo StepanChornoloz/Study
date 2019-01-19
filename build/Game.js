@@ -79,13 +79,13 @@ module.exports = __webpack_require__(357);
 "use strict";
 
 
-/*- The game has 2 players, playing in rounds
-- In each turn, a player rolls a dice as many times as he whishes. Each result get added to his ROUND score
-- BUT, if the player rolls a 1, all his ROUND score gets lost. After that, it's the next player's turn
-- The player can choose to 'Hold', which means that his ROUND score gets added to his GLBAL score. After that, it's the next player's turn
-- The first player to reach 100 points on GLOBAL score wins the game*/
+__webpack_require__(358);
 
-var scores, roundScore, activePlayer, gamePlaying;
+var scores, roundScore, activePlayer, gamePlaying; /*- The game has 2 players, playing in rounds
+                                                   - In each turn, a player rolls a dice as many times as he whishes. Each result get added to his ROUND score
+                                                   - BUT, if the player rolls a 1, all his ROUND score gets lost. After that, it's the next player's turn
+                                                   - The player can choose to 'Hold', which means that his ROUND score gets added to his GLBAL score. After that, it's the next player's turn
+                                                   - The first player to reach 100 points on GLOBAL score wins the game*/
 
 init();
 
@@ -96,7 +96,7 @@ document.querySelector('.btn-roll').addEventListener('click', function () {
 
         var diceDOM = document.querySelector('.dice');
         diceDOM.style.display = 'block';
-        diceDOM.src = 'image/dice-' + dice + '.png';
+        diceDOM.src = 'assets/images/dice-' + dice + '.png';
 
         if (dice !== 1) {
 
@@ -165,6 +165,13 @@ function init() {
     document.querySelector('.player-1-panel').classList.remove('active');
     document.querySelector('.player-0-panel').classList.add('active');
 }
+
+/***/ }),
+
+/***/ 358:
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
 
 /***/ })
 
