@@ -15,12 +15,19 @@ document.querySelector('.btn-roll').addEventListener('click', function() {
     if(gamePlaying) {
        
         var dice = Math.floor(Math.random() * 6) + 1;
-
+        
+        var dice1Path = require('../../assets/images/game/dice-1.png');
+        var dice2Path = require('../../assets/images/game/dice-2.png');
+        var dice3Path = require('../../assets/images/game/dice-3.png');
+        var dice4Path = require('../../assets/images/game/dice-4.png');
+        var dice5Path = require('../../assets/images/game/dice-5.png');
+        var dice6Path = require('../../assets/images/game/dice-6.png');
       
         var diceDOM = document.querySelector('.dice');
         diceDOM.style.display = 'block';
-        diceDOM.src = 'assets/images/dice-' + dice + '.png';
-
+      /*  diceDOM.src = 'assets/images/dice-' + dice + '.png';*/
+      /*  diceDOM.src = 'dice' + dice + 'Path'; */
+        diceDOM.src = require ('../../assets/images/game/dice-' + dice + '.png');
 
        
         if (dice !== 1) {
