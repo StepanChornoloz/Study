@@ -60,34 +60,34 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 348);
+/******/ 	return __webpack_require__(__webpack_require__.s = 354);
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ 348:
+/***/ 354:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(349);
+module.exports = __webpack_require__(355);
 
 
 /***/ }),
 
-/***/ 349:
+/***/ 355:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var _taskList = __webpack_require__(350);
+var _taskList = __webpack_require__(356);
 
-__webpack_require__(352);
+__webpack_require__(358);
 
 new _taskList.TaskList(document.querySelector('#taskList'));
 
 /***/ }),
 
-/***/ 350:
+/***/ 356:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -100,7 +100,7 @@ exports.TaskList = undefined;
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _httpService = __webpack_require__(351);
+var _httpService = __webpack_require__(357);
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
@@ -239,7 +239,7 @@ var TaskList = exports.TaskList = function () {
 
 /***/ }),
 
-/***/ 351:
+/***/ 357:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -339,7 +339,7 @@ var HTTPService = exports.HTTPService = function () {
 
 /***/ }),
 
-/***/ 352:
+/***/ 358:
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin

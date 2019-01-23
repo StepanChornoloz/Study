@@ -60,26 +60,68 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 356);
+/******/ 	return __webpack_require__(__webpack_require__.s = 362);
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ 356:
+/***/ 125:
+/***/ (function(module, exports) {
+
+module.exports = "./assets/images/dice-1.png";
+
+/***/ }),
+
+/***/ 126:
+/***/ (function(module, exports) {
+
+module.exports = "./assets/images/dice-2.png";
+
+/***/ }),
+
+/***/ 127:
+/***/ (function(module, exports) {
+
+module.exports = "./assets/images/dice-3.png";
+
+/***/ }),
+
+/***/ 128:
+/***/ (function(module, exports) {
+
+module.exports = "./assets/images/dice-4.png";
+
+/***/ }),
+
+/***/ 129:
+/***/ (function(module, exports) {
+
+module.exports = "./assets/images/dice-5.png";
+
+/***/ }),
+
+/***/ 130:
+/***/ (function(module, exports) {
+
+module.exports = "./assets/images/dice-6.png";
+
+/***/ }),
+
+/***/ 362:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(357);
+module.exports = __webpack_require__(363);
 
 
 /***/ }),
 
-/***/ 357:
+/***/ 363:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-__webpack_require__(358);
+__webpack_require__(364);
 
 var scores, roundScore, activePlayer, gamePlaying; /*- The game has 2 players, playing in rounds
                                                    - In each turn, a player rolls a dice as many times as he whishes. Each result get added to his ROUND score
@@ -94,9 +136,18 @@ document.querySelector('.btn-roll').addEventListener('click', function () {
 
         var dice = Math.floor(Math.random() * 6) + 1;
 
+        var dice1Path = __webpack_require__(125);
+        var dice2Path = __webpack_require__(126);
+        var dice3Path = __webpack_require__(127);
+        var dice4Path = __webpack_require__(128);
+        var dice5Path = __webpack_require__(129);
+        var dice6Path = __webpack_require__(130);
+
         var diceDOM = document.querySelector('.dice');
         diceDOM.style.display = 'block';
-        diceDOM.src = 'assets/images/dice-' + dice + '.png';
+        /*  diceDOM.src = 'assets/images/dice-' + dice + '.png';*/
+        /*  diceDOM.src = 'dice' + dice + 'Path'; */
+        diceDOM.src = __webpack_require__(365)("./dice-" + dice + '.png');
 
         if (dice !== 1) {
 
@@ -168,10 +219,39 @@ function init() {
 
 /***/ }),
 
-/***/ 358:
+/***/ 364:
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
+
+/***/ }),
+
+/***/ 365:
+/***/ (function(module, exports, __webpack_require__) {
+
+var map = {
+	"./dice-1.png": 125,
+	"./dice-2.png": 126,
+	"./dice-3.png": 127,
+	"./dice-4.png": 128,
+	"./dice-5.png": 129,
+	"./dice-6.png": 130
+};
+function webpackContext(req) {
+	return __webpack_require__(webpackContextResolve(req));
+};
+function webpackContextResolve(req) {
+	var id = map[req];
+	if(!(id + 1)) // check for number or string
+		throw new Error("Cannot find module '" + req + "'.");
+	return id;
+};
+webpackContext.keys = function webpackContextKeys() {
+	return Object.keys(map);
+};
+webpackContext.resolve = webpackContextResolve;
+module.exports = webpackContext;
+webpackContext.id = 365;
 
 /***/ })
 

@@ -60,34 +60,34 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 338);
+/******/ 	return __webpack_require__(__webpack_require__.s = 344);
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ 338:
+/***/ 344:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(339);
+module.exports = __webpack_require__(345);
 
 
 /***/ }),
 
-/***/ 339:
+/***/ 345:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var _tabs = __webpack_require__(340);
+var _tabs = __webpack_require__(346);
 
-__webpack_require__(342);
+__webpack_require__(348);
 
 (0, _tabs.tabs)();
 
 /***/ }),
 
-/***/ 340:
+/***/ 346:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -98,7 +98,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.tabs = tabs;
 
-__webpack_require__(341);
+__webpack_require__(347);
 
 function tabs() {
     var buttons = Array.from(document.querySelectorAll('.tabs__button'));
@@ -154,14 +154,14 @@ function tabs() {
 
 /***/ }),
 
-/***/ 341:
+/***/ 347:
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
 
-/***/ 342:
+/***/ 348:
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin

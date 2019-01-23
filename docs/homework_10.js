@@ -60,41 +60,41 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 333);
+/******/ 	return __webpack_require__(__webpack_require__.s = 339);
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ 333:
+/***/ 339:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(334);
+module.exports = __webpack_require__(340);
 
 
 /***/ }),
 
-/***/ 334:
+/***/ 340:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-__webpack_require__(335);
+__webpack_require__(341);
 
-var _accordion = __webpack_require__(336);
+var _accordion = __webpack_require__(342);
 
 (0, _accordion.accordion)(document.querySelector('#accordionArticle'));
 
 /***/ }),
 
-/***/ 335:
+/***/ 341:
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
 
-/***/ 336:
+/***/ 342:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -105,7 +105,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.accordion = accordion;
 
-__webpack_require__(337);
+__webpack_require__(343);
 
 var TITLE_CLASS_NAME = 'accordion__btn';
 var EXPAND_CLASS_NAME = 'accordion__menu_expand';
@@ -168,7 +168,7 @@ function accordion(targetElement) {
 
 /***/ }),
 
-/***/ 337:
+/***/ 343:
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin

@@ -60,26 +60,26 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 353);
+/******/ 	return __webpack_require__(__webpack_require__.s = 359);
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ 353:
+/***/ 359:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(354);
+module.exports = __webpack_require__(360);
 
 
 /***/ }),
 
-/***/ 354:
+/***/ 360:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-__webpack_require__(355);
+__webpack_require__(361);
 
 var selectPlanButtons = document.querySelectorAll(".banner__box_container button");
 var burgerButton = document.querySelector('.burger');
@@ -97,7 +97,7 @@ burgerButton.addEventListener('click', function () {
 
 /***/ }),
 
-/***/ 355:
+/***/ 361:
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
